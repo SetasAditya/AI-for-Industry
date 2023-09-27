@@ -156,7 +156,7 @@ def round_robin(processes, time_quantum):
     avg_waiting_time = sum(wait) / n
     avg_turnaround_time = sum(turn) / n
 
-    return turn, avg_waiting_time, avg_turnaround_time, process_order
+    return process_order, avg_waiting_time, avg_turnaround_time
 
 if __name__ == "__main__":
     # Input processes: [["P1", "00:00", 30, 3], ["P2", "00:10", 20, 1], ["P3", "00:15", 40, 4], ["P4", "00:20", 15, 2]]
@@ -169,7 +169,7 @@ if __name__ == "__main__":
     algorithms = ["FCFS", "SJF", "Priority", "Round Robin"]
 
     results = {}  # Store results for each algorithm
-    print(processes)
+
     for algorithm in algorithms:
         if algorithm == "FCFS":
             process_order, avg_waiting_time, avg_turnaround_time = first_come_first_serve(processes.copy())
