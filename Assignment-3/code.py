@@ -4,13 +4,14 @@ from pyrebase import initialize_app
 
 # Initialize Firebase
 config = {
-    "apiKey": "YOUR_API_KEY",
-    "authDomain": "YOUR_AUTH_DOMAIN",
-    "databaseURL": "YOUR_DATABASE_URL",
-    "projectId": "YOUR_PROJECT_ID",
-    "storageBucket": "YOUR_STORAGE_BUCKET",
-    "messagingSenderId": "YOUR_MESSAGING_SENDER_ID",
-    "appId": "YOUR_APP_ID"
+  'apiKey': "AIzaSyDBWpxjIuIqvua6e_MrQNXuHRUFm9r969U",
+  'authDomain': "raspi-assignment-a2778.firebaseapp.com",
+  'databaseURL': "https://raspi-assignment-a2778-default-rtdb.firebaseio.com",
+  'projectId': "raspi-assignment-a2778",
+  'storageBucket': "raspi-assignment-a2778.appspot.com",
+  'messagingSenderId': "367822748415",
+  'appId': "1:367822748415:web:f583b0490ac275b1426aca",
+  'measurementId': "G-9Y0D50YCWD"
 }
 
 firebase = initialize_app(config)
